@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon site web</title>
 
-    <!-- Lien vers ton CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -16,7 +15,6 @@
         <div class="principale">
             <h1>Bienvenue sur mon site</h1>
 
-            <!-- Image centrée -->
             <img src="2026.jpg" alt="Image du site" class="centre">
         </div>
     </header>
@@ -25,7 +23,7 @@
     <section class="formulaire">
         <h2>Formulaire de contact</h2>
 
-        <form action="#" method="post">
+        <form action="https://formspree.io/f/xljrlanp" method="POST">
 
             <div class="champ">
                 <label for="tel">Téléphone</label>
@@ -57,23 +55,10 @@
         </form>
     </section>
 
+    <!-- BOUTON APPELER -->
+    <section class="formulaire">
+        <a href="tel:0782192210" class="btn">Appeler maintenant</a>
+    </section>
+
 </body>
 </html>
-<form action="#" method="get">
-<a href="tel:0782192210">Appeler maintenant</a>
-
-<form action="https://formspree.io/f/xljrlanp" method="POST">
-    <label for="nom">Nom :</label>
-    <input type="text" id="nom" name="nom" required>
-
-    <label for="email">Email :</label>
-    <input type="email" id="email" name="email" required>
-
-    <label for="telephone">Téléphone :</label>
-    <input type="tel" id="telephone" name="telephone" required>
-
-    <label for="message">Message :</label>
-    <textarea id="message" name="message" required></textarea>
-
-    <button type="submit">Envoyer</button>
-</form>
