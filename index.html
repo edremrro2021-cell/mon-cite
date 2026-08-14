@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon site web</title>
+
+    <!-- Lien vers ton CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="principale">
+            <h1>Bienvenue sur mon site</h1>
+
+            <!-- Image centrée -->
+            <img src="2026.jpg" alt="Image du site" class="centre">
+        </div>
+    </header>
+
+    <!-- FORMULAIRE COMPLET -->
+    <section class="formulaire">
+        <h2>Formulaire de contact</h2>
+
+        <form action="#" method="post">
+
+            <div class="champ">
+                <label for="tel">Téléphone</label>
+                <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00" required>
+            </div>
+
+            <div class="champ">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+            </div>
+
+            <div class="champ">
+                <label for="info">Compétences informatiques</label>
+                <input type="text" id="info" name="info" placeholder="Support, réseau, maintenance…" required>
+            </div>
+
+            <div class="champ">
+                <label for="tech">Compétences techniques</label>
+                <input type="text" id="tech" name="tech" placeholder="Installation, câblage, dépannage…" required>
+            </div>
+
+            <div class="champ">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Votre message…" rows="5" required></textarea>
+            </div>
+
+            <button type="submit" class="btn">Envoyer</button>
+
+        </form>
+    </section>
+
+</body>
+</html>
+<form action="#" method="get">
+<form action="mailto:exemple@mail.com" method="post" enctype="text/plain">
