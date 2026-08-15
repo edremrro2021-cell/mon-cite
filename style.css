@@ -1,72 +1,123 @@
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background: #eef1f5;
+    box-sizing: border-box;
+    font-family: system-ui, sans-serif;
 }
 
-/* Header */
-.top {
+body {
+    background: #020b1a;
+    color: #e8f0ff;
+}
+
+/* HERO avec ta photo */
+.hero {
+    position: relative;
     text-align: center;
-    padding: 40px 20px;
-    background: #0078ff;
-    color: white;
+    padding: 100px 20px;
+    color: #ffffff;
 }
 
-.top h1 {
-    margin: 0;
-    font-size: 40px;
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url("2025.jpg") center/cover no-repeat;
+    filter: brightness(0.45) saturate(1.2);
+    z-index: -1;
 }
 
-.top p {
-    margin-top: 10px;
-    font-size: 18px;
+.hero h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
 }
 
-/* Formulaire */
-.formulaire {
-    width: 400px;
-    margin: 40px auto;
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.1);
-}
-
-.formulaire h2 {
-    text-align: center;
+.hero p {
+    font-size: 1.2rem;
     margin-bottom: 20px;
 }
 
-.champ {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 6px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 15px;
-}
-
+/* BUTTONS */
 .btn {
-    width: 100%;
-    padding: 12px;
-    background: #0078ff;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    font-size: 16px;
-    cursor: pointer;
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.btn.primary {
+    background: #1e90ff;
+    color: #020b1a;
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 1px solid #4cc3ff;
+    color: #e8f0ff;
 }
 
 .btn:hover {
-    background: #005fcc;
+    transform: translateY(-2px);
+}
+
+/* SERVICES */
+.services {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: grid;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: rgba(10, 20, 40, 0.9);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+}
+
+/* COMPETENCES */
+.competences {
+    padding: 40px 20px;
+}
+
+.competences ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.competences li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+/* CONTACT */
+.contact {
+    padding: 40px 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.field label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+}
+
+
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    opacity: 0.7;
 }
