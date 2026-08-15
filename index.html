@@ -3,58 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon site web</title>
-
+    <title>EG – Technicien Informatique à Saumur 49400</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header>
-        <div class="principale">
-            <h1>Bienvenue sur mon site</h1>
-            <img src="2026.jpg" alt="Image du site" class="centre">
-        </div>
+    <header class="hero">
+        <div class="hero-bg"></div>
+
+        <h1>EG – Technicien Informatique</h1>
+        <p>Saumur 49400 – Déplacements dans toute la région</p>
+        <a href="#contact" class="btn primary">Me contacter</a>
     </header>
 
-    <section class="formulaire">
+    <section class="services">
+        <h2>Services proposés</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Dépannage informatique</h3>
+                <p>Résolution rapide des problèmes Windows, logiciels, virus, lenteurs, erreurs système.</p>
+            </div>
+
+            <div class="card">
+                <h3>Installation & configuration</h3>
+                <p>Postes, imprimantes, réseaux, logiciels professionnels, mises à jour, optimisation.</p>
+            </div>
+
+            <div class="card">
+                <h3>Maintenance & sécurité</h3>
+                <p>Nettoyage, sauvegardes, protection antivirus, optimisation des performances.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="competences">
+        <h2>Compétences</h2>
+        <ul>
+            <li>Support informatique (N1/N2)</li>
+            <li>Maintenance PC / réseau</li>
+            <li>Installation matériel & logiciels</li>
+            <li>Dépannage Windows / Internet</li>
+            <li>Conseils & accompagnement</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="contact">
         <h2>Formulaire de contact</h2>
 
-        <form action="https://formspree.io/f/xljrlanp" method="POST">
+        <form action="https://formspree.io/f/xljrlanp" method="POST" class="contact-form">
 
-            <div class="champ">
+            <div class="field">
                 <label for="tel">Téléphone</label>
                 <input type="tel" id="tel" name="tel" placeholder="06 00 00 00 00" required>
             </div>
 
-            <div class="champ">
+            <div class="field">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+                <input type="email" id="email" name="email" placeholder="exemple@gmail.com" required>
             </div>
 
-            <div class="champ">
+            <div class="field">
                 <label for="info">Compétences informatiques</label>
-                <input type="text" id="info" name="info" placeholder="Support, réseau, maintenance…" required>
+                <input type="text" id="info" name="info" placeholder="Support, réseau, maintenance..." required>
             </div>
 
-            <div class="champ">
+            <div class="field">
                 <label for="tech">Compétences techniques</label>
-                <input type="text" id="tech" name="tech" placeholder="Installation, câblage, dépannage…" required>
+                <input type="text" id="tech" name="tech" placeholder="Installation, câblage, dépannage..." required>
             </div>
 
-            <div class="champ">
+            <div class="field">
                 <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Votre message…" rows="5" required></textarea>
+                <textarea id="message" name="message" placeholder="Votre message..." rows="4" required></textarea>
             </div>
 
-            <button type="submit" class="btn">Envoyer</button>
-
+            <button type="submit" class="btn primary">Envoyer</button>
         </form>
+
+        <a href="tel:0782192210" class="btn secondary">Appeler maintenant</a>
     </section>
 
-    <section class="formulaire">
-        <a href="tel:0782192210" class="btn">Appeler maintenant</a>
-    </section>
+    <footer>
+        <p>© 2026 – EG – Technicien Informatique – Saumur 49400</p>
+    </footer>
 
 </body>
 </html>
+body {
+    background: url("TEST/2025.jpg") center/cover no-repeat fixed;
+    color: #e8f0ff;
+}
